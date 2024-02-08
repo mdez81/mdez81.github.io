@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #8df3f3;
+}
+
+header,
+footer {
+    background-color: rgb(21, 247, 247);
+    padding: 20px;
+}
+
+nav{
+    width: 25%;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    background-color: rgb(72, 71, 70);
+    color: white;
+    display: block;
+}
+
+nav li:hover {
+    background-color: rgb(212, 193, 165);
+}
+
+#main-conent {
+    width: 75%;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.clearfix::after{
+    content: "";
+}
+
+
+
+p{
+    margin: 10px;
+}
+
+h2{
+    
+}
