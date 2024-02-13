@@ -6,6 +6,9 @@
 
 body{
     background-color: #8df3f3;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 header,
