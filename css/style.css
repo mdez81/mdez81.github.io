@@ -9,7 +9,37 @@
 body {
     font-family: Roboto, "sans-serif";
     font-size: 1em;
-    background: #e6deb9;
+    scroll-behavior: smooth;
+    background: #d7b520;
+}
+
+
+
+.tartalom {
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid #ddd;
+}
+
+header {
+    background-color: rgb(231, 230, 230);
+}
+
+#fejlec-kep {
+    background-image: url("../img/strandolas.jpg");
+    height: 400px;
+    border-radius: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid rgb(78, 123, 163);
+}
+
+#fejlec-szoveg {
+    position: absolute;
+    top: 180px;
+    left: 900px;
+    color: rgb(163, 154, 20);
 }
 
 aside {
@@ -17,15 +47,14 @@ aside {
     width: 30%;
     padding-top: 20px;
     margin-top: 15px;
-    background-color: rgb(119, 166, 210);
-    position: absolute;
-    top: 40%;
+    /*height: 100vh;*/
+    background-color: rgb(91, 155, 213);
+    border: 1px solid rgb(78, 123, 163);
+    border-radius: 40px;
 }
 
 nav{
-   padding: 30px 0;
-   position: relative;
-    top: 40%;
+   padding: 40px 0;
 }
 
 nav ul {
@@ -45,15 +74,217 @@ nav ul li a:hover{
     color: antiquewhite;
 }
 
-.tarolo {
-    width: 90%;
+#urlap {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1.2em;
+    font-style: italic;
+    padding: 10px 0;
+    text-align: center;
+}
+
+label#ellatas {
+    padding-top: 30px;
+}
+
+input, select, textarea{
+    width: 100%;
+    margin: 10px 0;
+   padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+input[type=submit]{
+    width: 100%;
+    padding: 15px 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: antiquewhite;;
+    font-weight: 700;   
+    cursor: pointer;
+    box-shadow: 0 9px rgb(127, 189, 209);
+}
+
+select#szallas-tipusa {
+    padding-top: 25px;
+}
+
+input[type=submit]:hover{
+    background-color: #00008b;
+    color: antiquewhite;
+}
+
+input[type=submit]:active{
+    background-color: #00008b;
+    box-shadow: 0 5px rgb(44, 130, 159);;
+    transform: translateY(4px);
+}
+
+h1, #balaton-alcim, #tisza-to-alcim, #szelidi-to-alcim {
+    text-align: center;
+    padding: 60px 50px;
+}
+
+ .cikkek {
+    width: 70%;
+    float: right;
     margin: 0 auto;
 }
 
-.focim {
-    position: absolute;
-    top: 50%;
-
-    left: 50%;
-    transform:  translate(-50%,50%);
+.kep {
+    margin: auto;
 }
+
+.leiras {
+    padding: 30px;
+}
+
+
+.leiras img {
+    width: 600px;
+    float: left;
+    margin: 15px 30px;
+}
+
+#balaton, #tisza-to, #szelidi-to{
+    margin: 20px;
+    padding: 35px 50px;
+    border: 1px solid rgb(78, 123, 163);
+    border-radius: 40px;
+}
+
+#balaton {
+    background: rgb(251, 229, 214);
+    color: rgb(144, 60, 4);
+}
+
+#tisza-to {
+    background: rgb(255, 242, 204);
+    color: rgb(143, 108, 3);
+}
+
+#szelidi-to{
+    background: rgb(222, 235, 247);
+    color: rgb(4, 87, 164)
+}
+
+footer {
+    clear: both;
+    padding: 15px;
+    background: rgb(231, 230, 230);
+    border: 1px solid rgb(78, 123, 163);
+    border-radius: 10px;
+}
+
+.felgorget { 
+    position: fixed; 
+    bottom: 100px; 
+    right: 10px; 
+    background-color: #3973b1; 
+    color: #e8e8e8; 
+    padding: 10px; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    font-size: 20px; 
+} 
+  
+.felgorget:hover { 
+    background-color: #04346f; 
+    color: white; 
+    font-size: 20px; 
+    padding: 20px; 
+}
+
+
+footer p {
+    text-align: center;
+}
+
+@media screen and (max-width: 1400px) {
+
+    #fejlec-szoveg {
+        top: 180px;
+        left: 700px;
+    }
+
+    .leiras img {
+        width: 100%;
+        float: none;
+        margin: 10px 20px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+
+    #fejlec-szoveg {
+        top: 180px;
+        left: 500px;
+    }
+
+    #urlap {
+        width: 100%;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .tartalom {
+        width: 100%;
+    }
+
+    .leiras {
+        padding: 10px;
+    }
+
+    .leiras img {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+
+    body {
+        font-size: 0.9em;
+    }
+
+    #fejlec-szoveg {
+        top: 180px;
+        left: 270px;
+    }
+
+    aside {
+        float: none;
+        width: 100%;
+        height: fit-content;
+    }
+
+    #urlap {
+        width: 100%;
+        margin: auto;
+        padding: 30px;
+    }
+
+    .tartalom {
+        width: 100%;
+    }
+
+    .cikkek {
+        width: 100%;
+        float: none;
+    }
+
+    .leiras img {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+}
+
