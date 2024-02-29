@@ -1,0 +1,374 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  /*font-family: Georgia, 'Times New Roman', Times, serif;*/
+  font-family: Poppins, "sans-serif";
+  background-color: rgb(224, 187, 193);
+}
+
+#fooldal {
+  background-image: url(../img/hatterkep-fooldal.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.tarolo{
+  width: 90%;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.tarolo.fogalma {
+  height: fit-content;
+}
+
+.tarolo.fogalma.parallax {
+  background-image: url("../img/hatterkep-parallax.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#focim {
+  color: #fff;
+  font-weight: 800;
+  font-size: 4em;
+  position: absolute;
+  top: 270px;
+  left: 25%;
+}
+
+.fejlec-abra {
+background-image: radial-gradient(circle, rgba(246,247,249, 0.1) 0%, rgba(196,1,1,1) 100%), url("../img/voroskereszt-fejlec-2.png") ;
+height: 400px;
+background-repeat: no-repeat;
+background-position: center;
+transition: transform 2s;
+}
+
+.fejlec-abra:hover {
+  transform: scale(0.8);
+}
+
+header {
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+}
+
+.logo img {
+  height: 80px;
+}
+
+header nav ul{
+  list-style-type: none;
+  background-color: #eee;
+  overflow: hidden;
+
+}
+
+header nav ul li {
+  float: left;
+  border-right: 1px solid rgb(243, 15, 15);
+}
+
+header nav ul li:first-child {
+  margin-left: 100px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 24px 20px;
+  text-align: center;
+  color: #111;
+  font-size: 1.5em;
+}
+
+header nav ul li a:hover {
+  background: radial-gradient(circle, rgba(246,247,249, 0.1) 0%, rgba(196,1,1,1) 100%);
+}
+
+.aktiv-fejlec {
+  background: linear-gradient(118deg, rgba(246,222,218,0.5942752100840336) 0%, rgba(203,51,31,0.6755077030812324) 34%, rgba(140,20,35,0.5466561624649859) 100%);
+}
+
+.icon {
+  display: none;
+}
+
+h1{
+  font-family: 'AbrilFatfac', serif;
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 60px;
+}
+
+h2{
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+.tarolo p {
+  font-size: 1.5em;
+}
+
+blockquote {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+article{
+  width: 70%;
+  margin: 0 auto
+}
+
+
+
+article p{
+  padding: 20px 0px;
+  font-size: 0.8em;
+}
+
+p#szerzo, p#leiras {
+  --animate-delay:0.8s;
+}
+
+#abra-1 {
+  float: right;
+  padding-top: 30px;
+  padding-left: 20px;
+  transition: transform ease 2s;
+}
+
+#abra-1:hover {
+  transform: translateY(30px);
+}
+
+#lanc{
+  float: left;
+  padding-right: 40px;
+}
+
+article ul {
+  list-style-type: square;
+  font-size: larger;
+  padding-left: 100px;
+}
+
+article ul a {
+  text-decoration: none;
+  color: #828181;
+}
+
+article ul:last-child {
+  padding-bottom: 100px;
+}
+
+
+
+#tablazat{
+  width: 60%;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid rgb(121, 3, 3);
+  padding: 15px 20px;
+ font-size: 1.1em;
+}
+
+#allapot {
+ margin-left: 60px;
+ font-size: x-large;
+ padding-bottom: 150px;
+ margin-bottom: 50px;
+}
+
+
+
+td:nth-child(1), td:nth-child(2) {
+  text-align: center;
+}
+
+ td:nth-child(3) {
+  text-align: left;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(225, 207, 184);
+}
+
+#urlap {
+  width: 450px;
+  margin: 0 auto;
+  position: absolute;
+  top: 950px;
+  left: 50%;  
+  transform: translate(-50%, -50%);
+  background-color: rgb(171, 250, 250);
+  padding: 20px 30px;
+  box-shadow: 0 0 15px aqua;
+  border-radius: 10px;
+}
+
+label {
+  display: block;
+  text-align: center;
+  color: #222;
+  font-size: 1.3em;
+}
+
+input[type=text], input[type=email], textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #d3d3d3;
+}
+
+input[type=submit] {
+  width: 100%;
+  padding: 15px 5px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: rgb(8, 193, 193);
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(3, 92, 92);
+  color: #fff;
+}
+
+
+footer{
+  background-color: #ddd;
+  margin-top: auto;
+  height: 40px;
+  padding-top: 10px;
+}
+
+footer p{
+  text-align: center;
+  font-size: 1em;
+}
+
+
+
+@media screen and (max-width:640px) {
+
+  #focim {
+    font-size: 2em;
+    top: 600px;
+    left: 50px;
+  }
+
+  .tarolo{
+    width: 100%;
+
+  }
+  
+  header nav ul li {
+    width: 100%;
+  }
+
+  header nav ul li:first-child {
+    margin-left: 0;
+  }
+
+  header nav ul li a {
+    /*display: none;*/
+    font-size: 1.8em;
+  }
+
+  h1{
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  article{
+    width: 80%;
+  }
+
+  .tarolo p {
+    font-size: 1em;
+  }
+
+  #abra-1 {
+    float: none;
+  }
+
+  #abra-1, #lanc {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  article ul {
+    list-style-type: square;
+    font-size: medium;
+    padding-left: 50px;
+  }
+  
+  article ul:last-child {
+    padding-bottom: 50px;
+  }
+
+  #tablazat{
+    width: 100%;
+    padding-bottom: 100px;
+  }
+  
+  table, th, td {
+    border: 1px solid rgb(121, 3, 3);
+    padding: 10px 15px;
+   font-size: 0.9em;
+  }
+  
+  #allapot-cim, #allapot {
+    display: none;
+  }
+
+  #urlap {
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 1100px;
+    left: 300px;
+    padding: 20px 20px;
+  }
+  
+  label {
+    font-size: 1em;
+  }
+
+  footer{
+    height: 35px;
+  }
+  
+  footer p{
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width:1200px) {
+ #allapot-cim, #allapot {
+  display: none;
+}
+}

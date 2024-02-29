@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>macska fotógaléria</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Nyitólap</a></li>
+                <li><a href="haziasitas.html">Háziasítása</a></li>
+                <li> <a href="eletmod.html">Életmódja</a></li>
+                <li><a href="/tartas.html">Tartása</a></li>
+                <li><a href="kepgaleria.html">Galéria</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Macska kalauz</h1>
+        <h2>minden amit a macskákról tudni kell</h2>
+
+        <div id="img-container">
+            <img src="../img/cat-1.jpg" alt="cat image 1" class="galeryImg" onclick="showImg(src)">
+            <img src="../img/cat-2.jpg" alt="cat image 1" class="galeryImg" onclick="showImg(src)">
+            <img src="../img/cat-3.jpg" alt="cat image 1" class="galeryImg" onclick="showImg(src)">
+            <img src="../img/cat-4.jpg" alt="cat image 1" class="galeryImg" onclick="showImg(src)">
+            <img src="../img/cat-5.jpg" alt="cat image 1" class="galeryImg" onclick="showImg(src)">
+            <img src="../img/cat-6.jpg" alt="cat image 1" class="galeryImg" onclick="showImg(src)">
+            <img src="../img/cat-7.jpg" alt="cat image 1" class="galeryImg" onclick="showImg(src)">
+            <img src="../img/cat-8 .jpg" alt="cat image 1" class="galeryImg" onclick="showImg(src)">
+            <img src="../img/cat-9.jpg" alt="cat image 1" class="galeryImg" onclick="showImg(src)">
+            <img src="../img/cat-10-lg.jpg" alt="cat image 10" class="galeryImg" onclick="showImg(src)">
+        </div>
+
+        <div id="img-popUp">
+            <span id="closeButton" onclick="closeImg()">&times;</span>
+            <img src="" alt="popup Imgage" id="popupImg">
+        </div>
+
+    </main>
+
+    <footer>
+        <small><strong>&copy; Minden jog fenntartva Mutz Dezső 2024</strong></small>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
