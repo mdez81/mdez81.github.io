@@ -9,23 +9,17 @@
 body {
     font-family: Roboto, "sans-serif";
     font-size: 1em;
-    background: #e6deb9;
 	background-image: url("../img/working-with-code.jpg");
-	background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.fejlec-kep {
-   
-}
-
 aside {
     float: left;
-    width: 30%;
+    width: 15%;
     padding-top: 20px;
     margin-top: 15px;
-    background-color: rgb(119, 166, 210);
+    background-color: rgb(146, 192, 236);
     position: absolute;
     top: 40%;
 }
@@ -49,7 +43,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    background-color: #00008b;
+    background-color: #032773;
     color: antiquewhite;
 }
 
@@ -61,7 +55,9 @@ nav ul li a:hover{
 .focim {
     position: absolute;
     top: 50%;
-
     left: 50%;
     transform:  translate(-50%,50%);
+    color: rgb(247, 152, 28);
+    background: antiquewhite;
+    font-size: 1.5em;
 }
