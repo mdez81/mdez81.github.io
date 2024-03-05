@@ -17,7 +17,7 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-   grid-template-rows: minmax(100px, auto);
+    grid-auto-rows: minmax(60px, auto);
     grid-gap: 0.25em;
 }
 
@@ -118,6 +118,7 @@ h2 {
 .bemutatkozas-1, .szolgaltatasaink-1 {
     grid-column: 1 /13;
     grid-row: 3/4;
+
 }
 
  .bemutatkozas-2,  .szolgaltatasaink-2 {
@@ -126,16 +127,16 @@ h2 {
 }
 
 .bemutatkozas-1 p, .bemutatkozas-2 p, .szolgaltatasaink-1 p, .szolgaltatasaink-2 p {
-    padding-top: 150px;
-    padding-left: 150px;
+    padding-top: 50px;
+    padding-left: 30px;
     width: 55vw;
 }
-
 
 .bemutatkozas-1 img, .bemutatkozas-2 img,  .szolgaltatasaink-1 img,  .szolgaltatasaink-2 img {
     width: 500px;
     float: right;
-    padding-bottom: 150px;
+    padding-right: 60px;
+    padding-bottom: 20px;
 }
 
 
@@ -145,6 +146,7 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1.5em;
+    padding-bottom: 20px;
 }
 
 #elerhetoseg-adatok {
@@ -167,6 +169,7 @@ h2 {
 
 #terkep {
     padding-top: 50px;
+    padding-bottom: 20px;
     float: right;
     place-self: center center;
 }
@@ -181,14 +184,35 @@ footer p{
    padding: 20px;
 }
 
-@media only screen and (max-width: 520px){
+@media only screen and (max-width: 655px){
     body {
         font-size: 0.9em;
     }
 
-
     .tarolo {
         width: 100%;
+    }
+
+    nav ul li{
+        float: none; 
+        width: 100%;
+        text-align: center;
+    }
+
+    h2 {
+        padding-top: 30px;
+    }
+
+    .bemutatkozas-1 p, .bemutatkozas-2 p, .szolgaltatasaink-1 p, .szolgaltatasaink-2 p {
+        padding-top: 0;
+        width: 100%;
+    }
+
+    .bemutatkozas-1 img, .bemutatkozas-2 img,  .szolgaltatasaink-1 img,  .szolgaltatasaink-2 img {
+        width: 100%;
+        float: right;
+        padding-right: 20px;
+        padding-bottom: 20px;
     }
 
     #elerhetoseg {
@@ -197,8 +221,13 @@ footer p{
         margin: 0 auto;
     }
 
+    #elerhetoseg-adatok h3 {
+        text-align: center;
+    }
+
    #terkep {
     width: 100%;
+    padding-left: 60px;
    }
 
     .szolgaltatas-1 , .szolgaltatas-2 {    
