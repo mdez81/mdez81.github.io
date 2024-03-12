@@ -237,7 +237,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: 100px 50px;
+    margin: 50px 50px;
     justify-content: center;
 }
 
@@ -252,9 +252,11 @@ h2 {
 .csapat-1 img,
 .csapat-2 img,
 .csapat-3 img {
-    width: 400px;
-   float: left;
-  padding-left: 40px;
+width: 400px;
+/*float: left;*/
+height: fit-content;
+padding-top: 120px;
+padding-left: 40px;
 }
    
 
@@ -264,9 +266,9 @@ padding-left: 60px;
 margin: 20px;
 }
 
-.csapatleiras p{
+/*.csapatleiras p{
     margin-bottom: 100px;
-}
+}*/
 
 /* drop down menü
 https://codepen.io/johnatan-vargas/pen/rNYyOqd
