@@ -1,0 +1,841 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(185, 221, 233);
+    font-size: 1.2em;
+    font-family: Roboto, "sans-serif";
+}
+
+.tarolo{
+    width: 90vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(60px, auto);
+    grid-gap: 0.25em;
+}
+
+.tarolo-2 {
+    overflow-y: scroll;
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+
+
+.logo img {
+    position: absolute;
+    height: 60px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+
+
+/*nav {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: rgb(116, 161, 249);
+}*/
+
+
+
+ nav ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(116, 161, 249);
+    padding-left: 100px;
+}
+
+ nav ul li{
+    float: left;  
+}
+
+
+
+ nav ul li a{
+    display: block;
+    text-decoration: none;
+    padding:  20px;
+    color: #fff;
+}
+
+ nav ul li a:hover {
+    color:#000;
+}
+
+.hamburger, .hamburger-nyito {
+    display: none;
+}
+
+.closeIcon, .closeIcon-nyito {
+    display: none;
+}
+
+
+.fejlec-kep {
+    display: grid;
+    background-image: url("../img/csana-fejlec.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.fejlec-kep.aloldalak{
+    background-image: url("../img/csana-fejlec-2.jpg");
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#fo-lap {
+display: none;
+}
+
+.fejlec-szoveg {
+    color: rgb(246, 82, 107);
+    align-self: center;
+    justify-self: center;
+}
+
+
+
+
+header, footer {
+    grid-column: 1 /13;
+}
+
+nav {
+    grid-column: 1 /13;
+    grid-row: 2 /3;
+}
+
+h1 {
+    background-color: rgba(246, 245, 245, 0.3);
+    padding: 5px;
+}
+
+h2 {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+
+#fooldal-1, #fooldal-2 {
+    padding: 20px;
+    align-self: center;
+}
+
+#fooldal-1 {
+    grid-column: 1 / 7;
+    grid-row: 3 /4;
+}
+
+
+
+#fooldal-2 {
+    grid-column: 7 / 13;
+    grid-row: 3 /4;
+}
+
+#fooldal-1 img, #fooldal-2 img {
+    width: 600px;
+}
+
+/*#fooldal-2 img {
+    padding-top: 50px;
+}
+
+#fooldal-1 p, #fooldal-2 p {
+    padding: 30px;
+}*/
+
+#fooldal-1 p {
+    padding-top: 20px;
+}
+
+#fooldal-2 p {
+    padding-top: 80px;
+}
+
+
+.bemutatkozas-1, .szolgaltatasaink-1 {
+    grid-column: 1 /13;
+    grid-row: 3/4;
+
+}
+
+ .bemutatkozas-2,  .szolgaltatasaink-2 {
+    grid-column: 1 /13;
+    grid-row: 4 / 5;
+}
+
+.bemutatkozas-3,  .szolgaltatasaink-3 {
+    grid-column: 1 /13;
+    grid-row: 6 / 7;
+}
+
+.szolgaltatasaink-4 {
+    grid-column: 1 / 13;
+    grid-row: 5 / 6;
+}
+
+.leiras-1, .leiras-2, .leiras-3 {
+    width: 31%;
+    float: left;
+    height: 100%;
+    padding: 30px 80px;
+}
+
+.leiras-1 {
+    background: rgb(114, 211, 114);
+   margin-right: 20px;
+}
+
+.leiras-2 {
+    background: rgb(68, 168, 239);
+    margin-right: 20px;
+}
+
+.leiras-3 {
+    background: rgb(252, 216, 148);
+    margin-right: 20px;
+}
+
+.leiras-1 ul,
+.leiras-2 ul,
+.leiras-3 ul {
+    list-style-type: none;
+}
+
+
+
+.bemutatkozas-2 ul {
+  padding-left: 50px;
+}
+
+.bemutatkozas-2 ul li {
+    width: 50vw;
+}
+
+.bemutatkozas-2 ul li:nth-child(odd) {
+    list-style-type: disk;
+    padding-bottom: 5px;
+}
+
+.bemutatkozas-2 ul li:nth-child(even) {
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+
+.alapelveink-kep {
+    margin-bottom: 100px;
+}
+
+.bemutatkozas-1 p,
+.bemutatkozas-2 p,
+.szolgaltatasaink-1 p,
+.szolgaltatasaink-2 p,
+.szolgaltatasaink-3 p {
+    padding-top: 20px;
+    padding-left: 30px;
+    width: 55vw;
+}
+
+.bemutatkozas-1 img,
+.bemutatkozas-2 img,
+.szolgaltatasaink-1 img, 
+.szolgaltatasaink-2 img,
+.szolgaltatasaink-3 img {
+    width: 500px;
+    float: right;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    /*margin-bottom: 200px;*/
+}
+
+.csapat-1,
+.csapat-2,
+.csapat-3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 50px 50px;
+    justify-content: center;
+}
+
+#csapat-fo-kep {
+    width: 100%;
+}
+
+.csapat-3 {
+    padding-bottom: 100px;
+}
+
+.csapat-1 img,
+.csapat-2 img,
+.csapat-3 img {
+width: 400px;
+/*float: left;*/
+height: fit-content;
+padding-top: 120px;
+padding-left: 40px;
+}
+   
+
+.csapatleiras {
+width: 70%;
+padding-left: 60px;
+margin: 20px;
+}
+
+/*.csapatleiras p{
+    margin-bottom: 100px;
+}*/
+
+/* drop down menü
+https://codepen.io/johnatan-vargas/pen/rNYyOqd
+*/
+.tarolo-2 main{
+    font-family: 'Titillium Web', sans-serif;
+    min-height:0;
+    width: 95%;
+    /*max-width: 450px;*/
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    margin: 90px 0;
+    padding:30px;
+    background: #fefffa;
+    box-shadow: 0 7px 7px 7px rgb(248, 212, 144) inset;       
+}
+
+.tarolo-2 main h2,
+.tarolo-2 main h3{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /*color: rgba(48,69,92,0.8);*/
+    color: rgba(250, 154, 154,0.8);    
+}
+.tarolo-2 main h3{
+    font-size: 1.125em;
+}
+.tarolo-2 main ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.tarolo-2 main ul li{
+    position: relative;
+    padding-bottom: 8px;
+    padding-top: 27px;
+    border-top: 1px solid #dce7eb;   
+}
+.tarolo-2 main ul li input[type="checkbox"]{
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+}
+.tarolo-2 main ul li i{
+    position: absolute;
+    transform: translate(-6px,0);
+    margin-top: 16px;
+    right: 0;
+} 
+.tarolo-2 main ul li input[type=checkbox]:checked ~ p {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translateX(-50%);
+}
+
+.tarolo-2 main ul li input[type="checkbox"]:checked~i::before{
+    transform: translate(2px,0) rotate(45deg);
+}
+.tarolo-2 main ul li input[type="checkbox"]:checked~i::after{
+    transform: translate(-2px,0) rotate(-45deg);
+}
+.tarolo-2 main ul li i::before,ul li i::after{
+    content: "";
+    position: absolute;
+    background: #333;
+    width: 3px;
+    height: 9px;
+}
+.tarolo-2 main ul li i::before{
+    transform: translate(-2px,0)rotate(45deg);
+}
+.tarolo-2 main ul li i:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+.tarolo-2 main p{
+  font-size: 1em;
+  color: rgba(48,69,92,0.8);
+  line-height: 26px;
+  letter-spacing: 1px;
+  position: relative;
+  padding: 0 11px;
+  max-height: 800px;
+  margin-top: 14px;
+  opacity: 1;
+  transform: translate(0,0);
+  overflow: hidden;     
+}
+.tarolo-2 main .transition, p, ul li i:before, ul li i:after {
+  transition: all 0.25s ease-in-out;
+  
+}
+.tarolo-2 main .flipIn, h1, ul li {
+  animation: flipdown 0.5s ease both;
+}
+.tarolo-2 main ul li:nth-of-type(1) {
+  animation-delay: 0.5s;
+}
+.tarolo-2 main ul li:nth-of-type(2) {
+  animation-delay: 0.75s;
+}
+.tarolo-2 main ul li:nth-of-type(3) {
+  animation-delay: 1s;
+}
+.tarolo-2 main ul li:last-of-type {
+  padding-bottom: 0;
+}
+
+@keyframes flipdown {
+  0% {
+    opacity: 0;
+    transform-origin: top center;
+    transform: rotateX(-90deg);
+  }
+  5% {
+    opacity: 1;
+  }
+  80% {
+    transform: rotateX(8deg);
+  }
+  83% {
+    transform: rotateX(6deg);
+  }
+  92% {
+    transform: rotateX(-3deg);
+  }
+  100% {
+    transform-origin: top center;
+    transform: rotateX(0deg);
+  }
+}
+/* drop down menü vége*/
+
+
+.jelentkezes-szoveg, .jelentkezes-urlap {
+    grid-template-columns: 6fr;
+    width: 42vw;
+    margin: 20px
+}
+
+
+
+.jelentkezes-szoveg {
+    padding: 20px;
+    align-self: center;
+}
+
+p#jelentkezes-szoveg-2 {
+    padding-top: 10px;
+
+}
+
+
+.jelentkezes-urlap {
+
+    float: right;
+    background-color: rgb(171, 250, 250);
+    padding: 20px 30px;
+    box-shadow: 0 0 15px aqua;
+    border-radius: 10px;
+  }
+  
+  label {
+    display: block;
+    text-align: center;
+    color: #222;
+
+  }
+
+ 
+  
+  input[type=text], input[type=email], input[type=tel], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #d3d3d3;
+  }
+
+
+  label[for=adatvedelem] {
+    text-align: left;
+   padding-left: 20px;
+
+  }
+
+  label[for=adatvedelem] a{ 
+    text-decoration: none;
+    color: #f08080;
+
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    padding: 15px 5px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: rgb(8, 193, 193);
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: rgb(3, 92, 92);
+    color: #fff;
+  }
+
+
+
+
+
+#elerhetoseg {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5em;
+    padding-bottom: 20px;
+}
+
+#elerhetoseg-adatok {
+    padding-top: 20px;
+    place-self:center end;
+}
+
+#elerhetoseg-adatok h2, #elerhetoseg-adatok h3 {
+    padding-bottom: 15px;
+}
+
+#elerhetoseg-adatok h3 i {
+    font-size: 1.5em;
+}
+
+#elerhetoseg-adatok h3 a {
+    color: #000;
+    text-decoration: none;
+}
+
+#terkep {
+    width: fit-content;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    float: right;
+    place-self: center center;
+}
+
+footer {
+    background: rgb(60, 144, 240);
+}
+
+footer p{
+    background: rgb(0, 119, 255);
+   text-align: center;
+   padding: 20px;
+}
+
+@media only screen and (max-width: 655px){
+    body {
+        font-size: 0.9em;
+    }
+
+    .tarolo, .tarolo-2 {
+        width: 100%;
+    }
+
+    .tarolo-2 main {
+        min-width: 100%;
+    }
+
+
+    .fejlec-szoveg {
+        top: 150px;
+        left: 30%; 
+    }
+
+    nav {
+        padding-top: 100px;
+            margin-bottom: 100px;
+
+    }
+
+    nav ul {
+        height: 0;
+    }
+
+    
+
+    nav ul li{
+        float: none; 
+        width: 100%;
+        text-align: center;
+        /*display: none;*/  
+    }
+
+    .showMenu {
+        height: fit-content;
+     }
+    
+
+    .hamburger {
+        display: block;
+        border: 3px solid #000;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        position: absolute;
+        top: 330px;
+        right: 20px;
+        font-size: 2.5em;
+    }
+
+   
+    .hamburger a, .hamburger-nyito a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .closeIcon {
+        display: none;
+        position: absolute;
+        top: 330px;
+        right: 20px;
+        text-decoration: none;
+        color: #000;
+        font-size: 2.5em;
+        padding-bottom: 20px;
+       }
+
+       .closeIcon-nyito {
+        display: none;
+        position: absolute;
+        top: 520px;
+        right: 20px;
+        text-decoration: none;
+        color: #000;
+        font-size: 2.5em;
+        padding-bottom: 20px;
+       }
+
+       .hamburger-nyito {
+        display: block;
+        border: 3px solid #000;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        position: absolute;
+        top: 520px;
+        right: 20px;
+        font-size: 2.5em;
+       }
+    
+
+   
+
+    .bemutatkozas-1 p,
+    .bemutatkozas-2 p,
+    .szolgaltatasaink-1 p,
+    .szolgaltatasaink-2 p,
+    .szolgaltatasaink-3 p  {
+        padding-top: 0;
+        width: 100%;
+    }
+
+    .bemutatkozas-1 img,
+    .bemutatkozas-2 img, 
+    .szolgaltatasaink-1 img, 
+    .szolgaltatasaink-2 img,
+    .szolgaltatasaink-3 img {
+        width: 100%;
+        float: right;
+        padding-right: 20px;
+        /*padding-bottom: 20px;*/
+    }
+
+    .leiras-1, .leiras-2, .leiras-3 {
+        width: 100%;
+        float: none;
+        height: fit-content;
+       /*padding-right: 200px;
+       padding: 30px 0;*/
+       padding: 30px 150px ! important;
+    }
+
+    .tarolo-2 main h3{
+        font-size: 1.1em;
+    }
+
+    .tarolo-2 main p{
+        font-size: 1em;   
+      }
+
+   
+      #jelentkezes {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .jelentkezes-szoveg, .jelentkezes-urlap {
+        width: 100%;
+
+    }
+   
+    .jelentkezes-szoveg {
+        margin: 15px;
+    }
+
+    .jelentkezes-urlap {
+      margin-left: 0;
+
+    }
+
+  
+    #elerhetoseg {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #elerhetoseg-adatok h3 {
+        text-align: center;
+    }
+
+   #terkep {
+    width: 100%;
+    padding-left: 60px;
+   }
+
+    .szolgaltatas-1 , .szolgaltatas-2 {    
+        width: 100%;
+    }
+   
+}
+
+
+@media only screen and (max-width: 995px){
+
+    .leiras-1, .leiras-2, .leiras-3 {
+        width: 100%;
+        float: none;
+        height: fit-content;
+       /*padding-right: 200px;
+       padding: 30px 0;*/
+       padding: 30px 220px ! important;
+    }
+
+    .csapat-1 ,
+    .csapat-2 ,
+    .csapat-3  {
+      flex-direction: column;
+    }
+   
+
+    .csapat-1 img,
+    .csapat-2 img,
+    .csapat-3 img {
+      float: none;
+      width: 100%;
+    
+    }
+
+    .csapatleiras {
+        width: 100%;
+        padding-left: 0;
+        }
+
+        #terkep {
+            width: 100%;
+            padding-left: 20px;
+            padding-right: 10px;
+           }
+
+           #elerhetoseg {
+            padding: 20px 0 0 10px;
+           }
+
+           #elerhetoseg-adatok {
+            padding: 20px 0 0 10px;
+           }
+        
+
+}
+
+
+
+@media only screen and (max-width: 1360px){
+    #fooldal-1 {
+        grid-column: 1 / 13;
+        grid-row: 3 / 6;
+    }
+
+    #fooldal-2 {
+        grid-column: 1 / 13;
+        grid-row: 6 / 9;
+    }
+
+    #fooldal-1 img, #fooldal-2 img {
+        width: 100%;
+    }
+
+    .bemutatkozas-1 p, .bemutatkozas-2 p, .szolgaltatasaink-1 p, .szolgaltatasaink-2 p, .szolgaltatasaink-3 p {
+        padding-top: 100px;
+        padding-left: 50px;
+        padding-bottom: 30px;
+        width: 100%;
+    }
+    
+    .bemutatkozas-1 img, .bemutatkozas-2 img,  .szolgaltatasaink-1 img,  .szolgaltatasaink-2 img, .szolgaltatasaink-3 img  {
+        width: 100%;
+        float: none;
+        padding-bottom: 150px;
+    }
+
+    .leiras-1, .leiras-2, .leiras-3 {
+        width: 100%;
+        float: none;
+        height: fit-content;
+        padding: 30px 300px;
+    }
+}
+
+
+
+
+
+
+
