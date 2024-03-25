@@ -1,37 +1,44 @@
-/*function mutat() {
-    document.getElementById("fo-lap").style.display = "block";
-    document.getElementById("fo-lap").style.width = "100px";
-    document.getElementById("fo-lap").style.height = "50px";
-}
+const menu = document.querySelector(".menu");
+//const menuItem = document.querySelector(".menuItem");
+const hamburgerMenu = document.querySelector(".hamburger-menu");
+const bezaroGomb = document.querySelector(".bezaro-gomb");
+const bezaroGombNyitolap = document.querySelector(".bezaro-gomb-nyito");
+const logo = document.querySelector(".logo a");
 
-function elrejt() {
-    document.getElementById("fo-lap").style.display = "none";
-}*/
-
-let menu = document.querySelector(".menu");
-let menuItem = document.querySelector(".menuItem");
-let hamburgerMenu = document.querySelector(".hamburger");
-let closeIcon = document.querySelector(".closeIcon");
-let closeIconNyitolap = document.querySelector(".closeIcon .closeIcon-nyito");
-
-
-
-function toggleMenu() {
-    if(menu.classList.contains("showMenu")) {
-        menu.classList.remove("showMenu");
+const menuKapcsolo = ()=> {
+    if(menu.classList.contains("menuMutatas")) {
+        menu.classList.remove("menuMutatas");
         hamburgerMenu.style.display = "block";
-        closeIcon.style.display = "none";
-        closeIconNyitolap.style.display = "none";
+        bezaroGomb.style.display = "none";
+        bezaroGombNyitolap.style.display = "none";
     }
     else {
-        menu.classList.add("showMenu");
+        menu.classList.add("menuMutatas");
         hamburgerMenu.style.display = "none";
-        closeIcon.style.display = "block";
-        closeIconNyitolap.style.display = "block";
+        bezaroGomb.style.display = "block";
+        bezaroGombNyitolap.display = "block";
+        //logo.style.display ="block";
     }
 }
 
-hamburgerMenu.addEventListener("click", toggleMenu);
+hamburgerMenu.addEventListener("click", menuKapcsolo);
+
+
+/* scroll to top button https://codepen.io/OsamaElzero/pen/jwYYXp*/
+const gorgetesGomb = $('#tetejereGorget');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    gorgetesGomb.addClass('show');
+  } else {
+    gorgetesGomb.removeClass('show');
+  }
+});
+
+gorgetesGomb.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
 
 
 
