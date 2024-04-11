@@ -187,7 +187,7 @@ h2 {
     border-radius: 4px;
     position: fixed;
     bottom: 30px;
-    right: 20px;
+    right: 10px;
     transition: background-color .3s, 
       opacity .5s, visibility .5s;
     opacity: 0;
@@ -265,6 +265,12 @@ h2 {
 .leiras-3 ul {
     list-style-type: none;
 }
+
+
+.leiras-1 img, .leiras-2 img, .leiras-3 img {
+    display: none;
+  
+  }
 
 
 
@@ -637,15 +643,43 @@ footer p{
         left: 30%; 
     }
 
+    .bemutatkozas-1 p{
+        margin: 0 30px;
+    }
+
 
     .bemutatkozas-1 p,
     .bemutatkozas-2 p,
     .szolgaltatasaink-1 p,
     .szolgaltatasaink-2 p,
     .szolgaltatasaink-3 p  {
-        padding-top: 0;
+        padding-top: 0!important;
+        padding-left: 20px!important;
+        margin: 0!important;
         width: 100%;
     }
+
+    .csapat-1,
+    .csapat-2,
+    .csapat-3 {
+        margin-left: 0!important;
+        margin-right: 0!important;
+    }
+
+    .csapat-1 img,
+    .csapat-2 img,
+    .csapat-3 img {
+        width: 100%;
+        margin: 0!important;
+    }
+    
+    .csapatleiras {
+        margin-left: 0!important;
+        margin-right: 0!important;
+        padding-left: 0;
+    }
+
+    
 
     .bemutatkozas-1 img,
     .bemutatkozas-2 img, 
@@ -654,21 +688,40 @@ footer p{
     .szolgaltatasaink-3 img {
         width: 100%;
         float: right;
-        padding-bottom: 30px!important;
+        padding-bottom: 0!important;
+        margin: 0!important;
     }
 
     #alapelevek-lista {
-        margin-left: 0;
+        margin: 0!important;
       }
 
-    .leiras-1, .leiras-2, .leiras-3 {
+      #alapelevek-lista li{
+        width: 100vw;
+      }
+
+      .leiras-1, .leiras-2, .leiras-3 {
         width: 100%;
         float: none;
         height: fit-content;
-       /*padding-right: 200px;
-       padding: 30px 0;*/
        padding: 30px 150px ! important;
+       
     }
+
+    #leiras-lista-1,
+    #leiras-lista-2,
+    #leiras-lista-3 {
+        margin: 0!important;
+        padding-top: 20px!important;
+    }
+
+    .leiras-1 img,  .leiras-2 img,  .leiras-3 img{
+        float: none!important;
+        padding-top: 30px!important;
+        margin: 0 auto;
+    }
+
+   
 
     .tarolo-2 main h3{
         font-size: 1.1em;
@@ -705,13 +758,22 @@ footer p{
         margin: 0 auto;
     }
 
+    #elerhetoseg-adatok {
+        padding-bottom: 20px;
+    }
+
     #elerhetoseg-adatok h3 {
         text-align: center;
     }
 
    #terkep {
     width: 100%;
-    padding-left: 60px;
+    padding-left: 0!important;
+    padding-right: 0!important;
+   }
+
+   #terkep iframe{
+    width: 100%;
    }
 
     .szolgaltatas-1 , .szolgaltatas-2 {    
@@ -719,7 +781,55 @@ footer p{
     }
    
 }
+@media only screen and (max-width: 949px){
 
+.leiras-1, .leiras-2, .leiras-3 {
+    width: 100%;
+    float: none;
+    height: fit-content;
+   /*padding-right: 200px;
+   padding: 30px 0;*/
+   padding: 0!important;
+   margin: 0!important;
+}
+
+.leiras-1 h3, .leiras-2 h3, .leiras-3 h3 {
+    text-align: center;
+    padding-top: 40px;
+}
+#leiras-lista-1,
+#leiras-lista-2,
+#leiras-lista-3 {
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  
+}
+
+
+
+.leiras-1 ul li, .leiras-2 ul li, .leiras-3 ul li {
+
+}
+
+
+.leiras-1 img, .leiras-2 img, .leiras-3 img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px 10px 0;
+}
+
+.leiras-1::after, .leiras-2::after, .leiras-3::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+}
 
 @media only screen and (max-width: 995px){
 
@@ -790,13 +900,35 @@ footer p{
         right: 70px;
        }
 
-    .leiras-1, .leiras-2, .leiras-3 {
-        width: 100%;
-        float: none;
-        height: fit-content;
-       /*padding-right: 200px;
-       padding: 30px 0;*/
-       padding: 30px 220px ! important;
+       .leiras-1 , .leiras-2, .leiras-3 {
+        padding: 30px 40px;
+       }
+
+       .leiras-1 h3, .leiras-2 h3, .leiras-3 h3 {
+        padding-bottom: 10px!important;
+       }
+
+       #tetejereGorget {
+
+        right: 5px;
+   
+
+    .bemutatkozas-1  h2 {
+        padding-top: 70px!important;
+        padding-bottom: 30!important;
+    }
+
+    .bemutatkozas-1 p {
+        padding-top: 20px!important;
+        padding-left: 0;
+        padding-bottom: 0!important;
+    }
+
+    .szolgaltatasaink-1 p, 
+    .szolgaltatasaink-2 p,
+    .szolgaltatasaink-3 p {
+        padding-left: 20px!important;
+        padding-top: 20px!important;
     }
 
     .bemutatkozas-1 img,
@@ -806,18 +938,27 @@ footer p{
     .szolgaltatasaink-3 img {
         width: 100%;
         float: right;
-        padding-bottom: 30px!important;
+        padding-bottom: 0!important;
     }
 
+
     #alapelevek-lista {
-        margin-left: 10%;
+        margin: 0;
       }
+
+      #alapelevek-lista li{
+        width: 85vw;
+      }
+
 
     .csapat-1 ,
     .csapat-2 ,
     .csapat-3  {
       flex-direction: column;
+      margin: 20px 0 20px 0;
     }
+
+  
    
 
     .csapat-1 img,
@@ -825,6 +966,7 @@ footer p{
     .csapat-3 img {
       float: none;
       width: 100%;
+      margin: 0;
     
     }
 
@@ -833,14 +975,18 @@ footer p{
         padding-left: 0;
         }
 
+        .csapatleiras h2 {
+           padding-top: 20px;
+            }
+
         #terkep {
             width: 100%;
             padding-left: 20px;
-            padding-right: 10px;
+            padding-right: 0;
            }
 
            #elerhetoseg {
-            padding: 20px 0 0 10px;
+            padding: 20px 20px 20px 10px;
            }
 
            #elerhetoseg-adatok {
@@ -880,12 +1026,14 @@ footer p{
         padding-bottom: 150px;
     }
 
-    .leiras-1, .leiras-2, .leiras-3 {
+    /*.leiras-1, .leiras-2, .leiras-3 {
         width: 100%;
         float: none;
         height: fit-content;
         padding: 30px 300px;
-    }
+    }*/
+
+    
 }
 
 
