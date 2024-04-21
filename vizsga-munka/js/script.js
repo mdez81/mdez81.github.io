@@ -1,11 +1,4 @@
-//nyitólap duppla kattintása a főlapra ugrik
-const nyitolapLink = document.querySelector("nav .menu");
 
-const folapraUgrik = () => {
-  nyitolapLink.setAttribute("href", "../");
-};
-
-nyitolapLink.firstChild.addEventListener("dblclick", folapraUgrik);
 
 //hamburger menü
 const menu = document.querySelector(".menu");
@@ -49,6 +42,18 @@ gorgetesGomb.on('click', function(e) {
   e.preventDefault();
   $('html, body').animate({scrollTop:0}, '300');
 });
+
+
+
+//nyitólap duppla kattintása a főlapra ugrik
+const nyitolapLink = document.querySelector("nav .menu li:first-child a");
+
+const folapraUgrik = () => {
+  nyitolapLink.href = "../index.html";
+  nyitolapLink.style.color ="black";
+}
+
+
 
 
 
