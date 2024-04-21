@@ -10,7 +10,7 @@ body {
     background: rgb(185, 221, 233);
     font-size: 1.2em;
     font-family: Roboto, "sans-serif";
-    overflow-y: scroll;
+    
 }
 
 .tarolo{
@@ -73,7 +73,8 @@ body {
 }
 
  nav ul li a:hover {
-    color:#000;
+    color:#fff;
+    background:  rgb(69, 124, 233);;
 }
 
 .hamburger-menu, .hamburger-nyito {
@@ -194,7 +195,7 @@ h2 {
 
 
 /* scroll to top button https://codepen.io/OsamaElzero/pen/jwYYXp*/
-#tetejereGorget {
+#tetejere-gorget {
     display: inline-block;
     background-color: #ffa51f;
     width: 45px;
@@ -210,7 +211,7 @@ h2 {
     visibility: hidden;
     z-index: 1000;
   }
-  #tetejereGorget::after {
+  #tetejere-gorget::after {
     content: "\f077";
     font-family: FontAwesome;
     font-weight: normal;
@@ -219,14 +220,14 @@ h2 {
     line-height: 50px;
     color: #fff;
   }
-  #tetejereGorget:hover {
+  #tetejere-gorget:hover {
     cursor: pointer;
     background-color: #5d5d5d;
   }
-  #tetejereGorget:active {
+  #tetejere-gorget:active {
     background-color: #555;
   }
-  #tetejereGorget.show {
+  #tetejere-gorget.show {
     opacity: 1;
     visibility: visible;
   }
@@ -236,7 +237,6 @@ h2 {
 .bemutatkozas-1, .szolgaltatasaink-1 {
     grid-column: 1 /13;
     grid-row: 3/4;
-
 }
 
  .bemutatkozas-2,  .szolgaltatasaink-2 {
@@ -322,6 +322,14 @@ h2 {
     
 }
 
+.bemutatkozas-1 p::first-letter,
+.bemutatkozas-2 p::first-letter,
+.szolgaltatasaink-1 p::first-letter,
+.szolgaltatasaink-2 p::first-letter,
+.szolgaltatasaink-3 p::first-letter {
+    font-size: 1.8em;
+}
+
 .bemutatkozas-1 img,
 .bemutatkozas-2 img,
 .szolgaltatasaink-1 img, 
@@ -337,6 +345,7 @@ h2 {
 }
 
 .bemutatkozas-1 img,
+.bemutatkozas-2 img,
 .szolgaltatasaink-1 img,
 .szolgaltatasaink-2 img,
 .szolgaltatasaink-3 img {
@@ -345,9 +354,7 @@ h2 {
     margin-top: 20px;
 }
 
-.bemutatkozas-2 img {
-    float: right;
-}
+
 
 #szolgaltatas-lista {
     padding:10px 0 10px 60px;
@@ -395,6 +402,13 @@ padding-left: 60px;
 margin: 20px;
 }
 
+.csapatleiras p::first-letter,
+.csapat-1 p::first-letter,
+.csapat-2 p::first-letter,
+.csapat-3::first-letter {
+    font-size: 1.8em;
+}
+
 /*.csapatleiras p{
     margin-bottom: 100px;
 }*/
@@ -403,6 +417,7 @@ margin: 20px;
 https://codepen.io/johnatan-vargas/pen/rNYyOqd
 */
 .tarolo-2 main{
+    overflow-y: scroll;
     font-family: 'Titillium Web', sans-serif;
     min-height:0;
     width: 95%;
@@ -647,6 +662,10 @@ p.jelentkezes-szoveg-2 {
     text-decoration: none;
 }
 
+#elerhetoseg-adatok h3 a:hover {
+    color: rgb(3, 57, 119);
+}
+
 #terkep {
     width: fit-content;
     padding-top: 50px;
@@ -705,6 +724,14 @@ footer p{
         margin: 0 30px;
     }
 
+    .bemutatkozas-1 p,
+    .bemutatkozas-2 p,
+    .szolgaltatasaink-1 p,
+    .szolgaltatasaink-2 p,
+    .szolgaltatasaink-3 p {
+        padding-right: 15px;
+    }
+
 
     .bemutatkozas-1 p,
     .bemutatkozas-2 p,
@@ -717,11 +744,21 @@ footer p{
         width: 100%;
     }
 
+    .alapelveink-kep {
+        padding-top: 15px;
+    }
+
     .csapat-1,
     .csapat-2,
     .csapat-3 {
         margin-left: 0!important;
         margin-right: 0!important;
+    }
+
+    .csapat-1 p,
+    .csapat-2 p,
+    .csapat-3 p{
+     padding: 0 15px;
     }
 
     .csapat-1 img,
@@ -799,14 +836,26 @@ footer p{
         width: 100%;
 
     }
+
+    .jelentkezes-szoveg {
+        padding: 0 10px 10px 15px;
+    }
    
     .jelentkezes-szoveg {
-        margin: 15px;
+        margin:0 0 10px 0;
+    }
+
+    .jelentkezes-szoveg p {
+        padding-left: 10px;
     }
 
     .jelentkezes-urlap {
       margin: 0;
+      padding: 0 10px;
+    }
 
+    input[type=submit] {
+       margin: 15px 0;
     }
 
   
@@ -839,6 +888,13 @@ footer p{
     }
    
 }
+
+/*@media only screen and (max-width: 755px){
+   div#elerhetoseg{
+    padding-left: 20px!important;
+   }
+}*/
+
 @media only screen and (max-width: 949px){
 
 .leiras-1, .leiras-2, .leiras-3 {
@@ -903,6 +959,12 @@ footer p{
 
     .menuMutatas {
         height: fit-content;
+        padding-left: 0;
+     }
+
+     .menuMutatas li a {
+        width: 100%;
+        text-align: center;
      }
 
      .hamburger-menu,
@@ -939,7 +1001,7 @@ footer p{
 
     .bezaro-gomb,
     .bezaro-gomb-nyito {
-        display: none;
+      
         /*position: absolute;*/
         text-decoration: none;
         color:rgb(2, 117, 248);
@@ -947,7 +1009,7 @@ footer p{
         padding-bottom: 20px;
        }
 
-    .bezaro-gomb {
+    /*.bezaro-gomb {
         top: 330px;
         right: 70px;
        }
@@ -955,6 +1017,10 @@ footer p{
        .bezaro-gomb-nyito {
         top: 520px;
         right: 70px;
+       }*/
+
+       #fooldal-1 img {
+        padding-top: 10px;
        }
 
        .leiras-1 , .leiras-2, .leiras-3 {
@@ -1035,21 +1101,25 @@ footer p{
         padding-left: 0;
         }
 
-        .csapatleiras h2 {
+    .csapatleiras h2 {
            padding-top: 20px;
             }
 
-        #terkep {
+        .jelentkezes-urlap {
+            margin-top: 30px!important;
+        }
+
+    #terkep {
             width: 100%;
             padding-left: 20px;
             padding-right: 0;
            }
 
-           #elerhetoseg {
+     #elerhetoseg {
             padding: 20px 20px 20px 10px;
            }
 
-           #elerhetoseg-adatok {
+    #elerhetoseg-adatok {
             padding: 20px 0 0 10px;
            }
         
@@ -1095,6 +1165,15 @@ footer p{
 
     
 }
+
+
+
+@media only screen and (max-width: 1890px) {
+    #fooldal-2 img {
+        margin-top: 0;
+    }
+}
+
 
 
 
