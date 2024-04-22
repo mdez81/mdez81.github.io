@@ -1031,8 +1031,13 @@ footer p{
         grid-row: 6 / 9;
     }
 
-    #fooldal-1 img, #fooldal-2 img {
+    #fooldal-1 imgg {
         width: 100%;
+    }
+
+    #fooldal-2 img {
+      width: 100%;
+      height: 120%;
     }
 
     .bemutatkozas-1 p, .bemutatkozas-2 p, .szolgaltatasaink-1 p, .szolgaltatasaink-2 p, .szolgaltatasaink-3 p {
