@@ -2,25 +2,19 @@
 
 //hamburger menü
 const menu = document.querySelector(".menu");
-//const menuItem = document.querySelector(".menuItem");
 const hamburgerMenu = document.querySelector(".hamburger-menu");
 const bezaroGomb = document.querySelector(".bezaro-gomb");
-//const bezaroGombNyitolap = document.querySelector(".bezaro-gomb-nyito");
-//const logo = document.querySelector(".logo a");
 
 const menuKapcsolo = ()=> {
     if(menu.classList.contains("menuMutatas")) {
         menu.classList.remove("menuMutatas");
         hamburgerMenu.style.display = "block";
         bezaroGomb.style.display = "none";
-        //bezaroGombNyitolap.style.display = "none";
     }
     else {
         menu.classList.add("menuMutatas");
         hamburgerMenu.style.display = "none";
         bezaroGomb.style.display = "block";
-        //bezaroGombNyitolap.display = "block";
-        //logo.style.display ="block";
     }
 }
 
@@ -43,17 +37,15 @@ gorgetesGomb.on('click', function(e) {
   $('html, body').animate({scrollTop:0}, '300');
 });
 
-
-
 //nyitólap duppla kattintása a főlapra ugrik
-const nyitolapLink = document.querySelector("nav .menu li:first-child a");
+const nyitolapLink = document.querySelector("nav div.logo a");
+const fejlecKep = document.querySelector("header .fejlec-kep");
 
 const folapraUgrik = () => {
   nyitolapLink.href = "../index.html";
-  nyitolapLink.style.color ="black";
+ 
 }
 
-
-
+fejlecKep.addEventListener("dblclick", folapraUgrik);
 
 
